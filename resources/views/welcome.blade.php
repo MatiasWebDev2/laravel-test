@@ -1,6 +1,7 @@
 <x-layout>
     <x-slot:title>
-        o pequenino
+        Bem vindo
     </x-slot:title>
-    welcome page.
+    
+    Seja bem vindo!
 </x-layout>
