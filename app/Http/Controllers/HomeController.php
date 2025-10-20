@@ -32,7 +32,16 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       $validated = $request->validate([
+        'message'=> 'required|string|max:255|min:3',
+       ]);
+
+       Post::create([
+        'message'=> $validated['message'],
+        'user_id'=> null,
+       ]);
+
+       return redirect('/')->with('success','Post criado com sucesso!');
     }
 
     /**
