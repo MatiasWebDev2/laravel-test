@@ -30,7 +30,7 @@
         </form>
 
         @forelse ($posts as $post)
-            <x-post :post="$post" />
+            <x-posts.post :post="$post" />
         @empty
             <div class="w-[80%]">
                 <div>Ninguém comentou ainda. Seja o primeiro.</div>
