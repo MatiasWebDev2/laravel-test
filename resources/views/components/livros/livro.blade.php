@@ -1,0 +1,1 @@
+<p>{{ $livro->titulo }} - {{ $livro->editora->nome }}</p>
